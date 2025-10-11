@@ -17,7 +17,7 @@ This is quite often what Risk Stratification tools used in healthcare are attemp
 
 The imbalance in the classes would mean the “Risk of hospitalisation in the next 12 months” would be difficult to predict as the model does not have enough data to learn and therefore to predict the minority class. There would be more Type II errors (False negatives) i.e. predicting a patient would not be at risk of hospitalisation (majority class) when they actually are (minority class). This would render the model outputs useless, and GPs would be missing patients they could have targeted for prevention and no robust way of predicting demand into Acute Hospitals.
 
-Therefore, correcting for the imbalance (stratified sampling or oversampling) is essential to carry out first. 
+📍Therefore, correcting for the imbalance (stratified sampling or oversampling) is essential to carry out first. 
 
 By oversampling the minority class, to correct for the class imbalance, there is more data made available, for the class of interest for the model to learn and test against. However the trade-off is overfitting and the model created might only show good performance on the local patient population that it was trained on. If the model was applied to a different local patient population with for example different social demographics, then there is a risk of the model not being generalisable enough and performance dropping significantly. 
 
